@@ -4,9 +4,12 @@ import com.test.trysecurity.user.dto.UserCreate;
 import com.test.trysecurity.user.entity.User;
 import org.mapstruct.Builder;
 import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 
 @Mapper(builder = @Builder(disableBuilder = true))
 public interface UserMapper {
+
+    UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
     User toEntity(UserCreate userCreate);
 
