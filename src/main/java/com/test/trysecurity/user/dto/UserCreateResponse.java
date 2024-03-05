@@ -9,11 +9,6 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserCreate {
-
-    private String name;
-    private String email;
-    private String password;
-    private String rePassword;
-
+public class UserCreateResponse {
+    private Long id;
 }

@@ -7,13 +7,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class UserCreate {
+@AllArgsConstructor
+public class UserView {
 
-    private String name;
-    private String email;
-    private String password;
-    private String rePassword;
+    Long id;
+    String name;
+    String email;
 
 }
