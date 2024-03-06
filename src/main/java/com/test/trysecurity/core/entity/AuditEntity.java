@@ -32,7 +32,7 @@ public abstract class AuditEntity {
     private LocalDateTime updatedAt;
 
     @Column(name = "is_deleted", nullable = false)
-    private Byte isDeleted = 0;
+    private boolean isDeleted = false;
 
     @Column(name = "deleted_at")
     private LocalDate deletedAt;
